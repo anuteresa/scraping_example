@@ -21,5 +21,16 @@ for item in all:
     l.append(d)
 df=pandas.DataFrame(l)
 df.to_csv("outputiphone1.excel")
+s=[]
+for item in l:
+
+
+    if (item['price'] > '₹42,500'):
+        print(item)
+        s.append((item))
+
+
+s=pandas.DataFrame(s)
+s.to_csv("highpriceiphone.excel")
 
 
